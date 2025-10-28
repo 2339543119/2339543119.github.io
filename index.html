@@ -152,6 +152,138 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-第一天----学习关于如何搭建你的第一个静态博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="第一天—-学习关于如何搭建你的第一个静态博客"><a href="#第一天—-学习关于如何搭建你的第一个静态博客" class="headerlink" title="第一天—-学习关于如何搭建你的第一个静态博客"></a>第一天—-学习关于如何搭建你的第一个静态博客</h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><h3 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h3><h3 id="安装Node"><a href="#安装Node" class="headerlink" title="安装Node"></a>安装Node</h3><h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><p>cmd查看以下代码：</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
+
+<p>如果弹出版本号，则安装成功。</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+
+<p>这里报了个错，原因<strong>淘宝镜像已经停服 &#x2F; 迁移了</strong></p>
+<blockquote>
+<p><strong>淘宝 NPM 镜像已经从 <code>https://registry.npm.taobao.org</code> 迁移到 <code>https://registry.npmmirror.com</code></strong></p>
+</blockquote>
+<p>cmd查看以下代码：</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnmp -v</span><br></pre></td></tr></table></figure>
+
+<p>如果弹出信息，则安装成功。</p>
+<p>安装hexo框架：</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<h2 id="打开自己的第一个blog"><a href="#打开自己的第一个blog" class="headerlink" title="打开自己的第一个blog"></a>打开自己的第一个blog</h2><p>新建文件夹blog</p>
+<p>在blog目录下进入cmd（在地址栏按回车）：</p>
+<p><img src="C:\Users\lrx\AppData\Roaming\Typora\typora-user-images\image-20251027231717202.png" alt="image-20251027231717202"></p>
+<p>初始化hexo:</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+
+<p>打开Hello world博客：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<p>在网页端进入localhost:4000</p>
+<p>可以看到hello world博客页面</p>
+<p>创建第二篇博客，地址位于source&#x2F;__<em>posts&#x2F;</em>,在里面创建第二篇md文件，可以写入一些文字。</p>
+<p>再来打开cmd，在&#x2F;blog目录下输入:</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<p>可以看到你的内容。</p>
+<h2 id="将blog部署到GitHub上"><a href="#将blog部署到GitHub上" class="headerlink" title="将blog部署到GitHub上"></a>将blog部署到GitHub上</h2><h3 id="登录GitHub"><a href="#登录GitHub" class="headerlink" title="登录GitHub"></a>登录GitHub</h3><p>注册一个GitHub账号后登录你的GitHub账号。</p>
+<h3 id="创建blog仓库"><a href="#创建blog仓库" class="headerlink" title="创建blog仓库"></a>创建blog仓库</h3><p>用户署名必须要是你的用户名加上.github.io。</p>
+<p>如：23332.github.io</p>
+<p>描述：你的hexo博客</p>
+<p>点击创建。</p>
+<h3 id="下载插件并配置"><a href="#下载插件并配置" class="headerlink" title="下载插件并配置"></a>下载插件并配置</h3><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<p>打开_config.yml文件：</p>
+<p><img src="C:\Users\lrx\AppData\Roaming\Typora\typora-user-images\image-20251028172459157.png" alt="image-20251028172459157"></p>
+<p>配置与上面一样，需要改repo为下图HTTPS中的链接：</p>
+<p><img src="C:\Users\lrx\AppData\Roaming\Typora\typora-user-images\image-20251028172701428.png" alt="image-20251028172701428"></p>
+<h3 id="部署到远端"><a href="#部署到远端" class="headerlink" title="部署到远端"></a>部署到远端</h3><p>在cmd中输入启动部署到GitHub上：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p>启动时要求你的GitHub账号密码，当你输入账号密码，你会发现根本登不上去。原因是2021年Git已经不在支持账号密码登录GitHub，只能用token或者SSH key登录。</p>
+<p>token方法：找到settings-&gt;developer settings</p>
+<p><img src="C:\Users\lrx\AppData\Roaming\Typora\typora-user-images\image-20251028174141758.png" alt="image-20251028174141758"></p>
+<p>找到Token(classic)并创建Token</p>
+<p><img src="C:\Users\lrx\AppData\Roaming\Typora\typora-user-images\image-20251028174245936.png" alt="image-20251028174245936"></p>
+<p>创建Token的过程中必须勾选你需要的权限，不然创建了没用（之前犯的错）</p>
+<p><img src="C:\Users\lrx\AppData\Roaming\Typora\typora-user-images\image-20251028174555478.png" alt="image-20251028174555478"></p>
+<p>记得复制保存你的密钥，只会出现一次：</p>
+<p><img src="C:\Users\lrx\AppData\Roaming\Typora\typora-user-images\image-20251028174721587.png" alt="image-20251028174721587"></p>
+<p>最后，在cmd中输入启动部署到GitHub上：</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p>将密钥复制到token处，即可登录成功。</p>
+<p>SSH key方法：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV18v411w7WL/?spm_id_from=333.337.search-card.all.click&vd_source=b3a6fe7cb17ffe9e7aff6020f78014df">最大同*交流网站变天了？Github不再支持密码验证的解决方案_哔哩哔哩_bilibili</a></p>
+<p>通过这个链接即可了解。</p>
+<p>出现以下图像为部署成功：</p>
+<p><img src="C:\Users\lrx\AppData\Roaming\Typora\typora-user-images\image-20251028172825043.png" alt="image-20251028172825043"></p>
+<p>注意现在访问2339543119.github.io会出现404的情况，应该进行如下修改：</p>
+<p>进入settings</p>
+<p><img src="C:\Users\lrx\AppData\Roaming\Typora\typora-user-images\image-20251028173010606.png" alt="image-20251028173010606"></p>
+<p>找到pages</p>
+<p><img src="C:\Users\lrx\AppData\Roaming\Typora\typora-user-images\image-20251028173042203.png" alt="image-20251028173042203"></p>
+<p>一般第一次创建都为None,应该改为master或者main，你看你的项目是什么，我的是master(与_config.yml文件和code中分支保持一致)。</p>
+<p><img src="C:\Users\lrx\AppData\Roaming\Typora\typora-user-images\image-20251028173059898.png" alt="image-20251028173059898"></p>
+<h2 id="访问你的远端blog"><a href="#访问你的远端blog" class="headerlink" title="访问你的远端blog"></a>访问你的远端blog</h2><p>在地址栏输入你的链接，我的是2339543119.github.io，进入以下页面：</p>
+<p><img src="C:\Users\lrx\AppData\Roaming\Typora\typora-user-images\image-20251028173419381.png" alt="image-20251028173419381"></p>
+<p>即为部署成功，快去试试吧。</p>
+<h2 id="更改你blog的主题"><a href="#更改你blog的主题" class="headerlink" title="更改你blog的主题"></a>更改你blog的主题</h2><p>进入cmd，下载主题：</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia</span><br></pre></td></tr></table></figure>
+
+<p>找到blog&#x2F;themes&#x2F;，把主题名称改为yilia。</p>
+<p><img src="C:\Users\lrx\AppData\Roaming\Typora\typora-user-images\image-20251028175716596.png" alt="image-20251028175716596"></p>
+<p>之后再打开_config.yml文件，修改theme，保存：</p>
+<p><img src="C:\Users\lrx\AppData\Roaming\Typora\typora-user-images\image-20251028175750023.png" alt="image-20251028175750023"></p>
+<p>再来打开cmd，在&#x2F;blog目录下输入:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
+
+<p>启动成功后，等待几分钟后，主题更改在2339543119.github.io页面。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2025/10/28/%E7%AC%AC%E4%B8%80%E5%A4%A9----%E5%AD%A6%E4%B9%A0%E5%85%B3%E4%BA%8E%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-My-New-Post" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
