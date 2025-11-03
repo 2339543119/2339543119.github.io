@@ -176,7 +176,7 @@
 
 <h2 id="打开自己的第一个-blog"><a href="#打开自己的第一个-blog" class="headerlink" title="打开自己的第一个 blog"></a>打开自己的第一个 blog</h2><p>新建文件夹 blog</p>
 <p>在 blog 目录下进入 cmd（在地址栏按回车）：</p>
-<p><img src="/./images/image-20251027231717202.png" alt="image-20251027231717202"></p>
+<p><img src="/../images/image-20251027231717202.png" alt="image-20251027231717202"></p>
 <p>初始化 hexo:</p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
 
@@ -198,21 +198,21 @@
 <h3 id="下载插件并配置"><a href="#下载插件并配置" class="headerlink" title="下载插件并配置"></a>下载插件并配置</h3><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 
 <p>打开_config.yml 文件：</p>
-<p><img src="/2025/10/28/%E7%AC%AC%E4%B8%80%E5%A4%A9----%E5%AD%A6%E4%B9%A0%E5%85%B3%E4%BA%8E%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/Users\lrx\AppData\Roaming\Typora\typora-user-images\image-20251028172459157.png" alt="image-20251028172459157"></p>
+<p><img src="/../images/image-20251028172459157.png" alt="image-20251028172459157"></p>
 <p>配置与上面一样，需要改 repo 为下图 HTTPS 中的链接：</p>
-<p><img src="/2025/10/28/%E7%AC%AC%E4%B8%80%E5%A4%A9----%E5%AD%A6%E4%B9%A0%E5%85%B3%E4%BA%8E%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/Users\lrx\AppData\Roaming\Typora\typora-user-images\image-20251028172701428.png" alt="image-20251028172701428"></p>
+<p><img src="/../images/image-20251028172701428.png" alt="image-20251028172701428"></p>
 <h3 id="部署到远端"><a href="#部署到远端" class="headerlink" title="部署到远端"></a>部署到远端</h3><p>在 cmd 中输入启动部署到 GitHub 上：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 
 <p>启动时要求你的 GitHub 账号密码，当你输入账号密码，你会发现根本登不上去。原因是 2021 年 Git 已经不在支持账号密码登录 GitHub，只能用 token 或者 SSH key 登录。</p>
 <p>token 方法：找到 settings-&gt; developer settings</p>
-<p><img src="/2025/10/28/%E7%AC%AC%E4%B8%80%E5%A4%A9----%E5%AD%A6%E4%B9%A0%E5%85%B3%E4%BA%8E%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/Users\lrx\AppData\Roaming\Typora\typora-user-images\image-20251028174141758.png" alt="image-20251028174141758"></p>
+<p><img src="/../images/image-20251028174141758.png" alt="image-20251028174141758"></p>
 <p>找到 Token(classic)并创建 Token</p>
-<p><img src="/2025/10/28/%E7%AC%AC%E4%B8%80%E5%A4%A9----%E5%AD%A6%E4%B9%A0%E5%85%B3%E4%BA%8E%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/Users\lrx\AppData\Roaming\Typora\typora-user-images\image-20251028174245936.png" alt="image-20251028174245936"></p>
+<p><img src="/../images/image-20251028174245936.png" alt="image-20251028174245936"></p>
 <p>创建 Token 的过程中必须勾选你需要的权限，不然创建了没用（之前犯的错）</p>
-<p><img src="/2025/10/28/%E7%AC%AC%E4%B8%80%E5%A4%A9----%E5%AD%A6%E4%B9%A0%E5%85%B3%E4%BA%8E%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/Users\lrx\AppData\Roaming\Typora\typora-user-images\image-20251028174555478.png" alt="image-20251028174555478"></p>
+<p><img src="/../images/image-20251028174555478.png" alt="image-20251028174555478"></p>
 <p>记得复制保存你的密钥，只会出现一次：</p>
-<p><img src="/2025/10/28/%E7%AC%AC%E4%B8%80%E5%A4%A9----%E5%AD%A6%E4%B9%A0%E5%85%B3%E4%BA%8E%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/Users\lrx\AppData\Roaming\Typora\typora-user-images\image-20251028174721587.png" alt="image-20251028174721587"></p>
+<p><img src="/../images/image-20251028174721587.png" alt="image-20251028174721587"></p>
 <p>最后，在 cmd 中输入启动部署到 GitHub 上：</p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 
@@ -220,24 +220,24 @@
 <p>SSH key 方法：[最大同*交流网站变天了？Github 不再支持密码验证的解决方案_哔哩哔哩_bilibili](<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV18v411w7WL/?spm_id_from">https://www.bilibili.com/video/BV18v411w7WL/?spm_id_from</a> &#x3D; 333.337.search-card.all.click&amp;vd_source &#x3D; b3a6fe7cb17ffe9e7aff6020f78014df)</p>
 <p>通过这个链接即可了解。</p>
 <p>出现以下图像为部署成功：</p>
-<p><img src="/2025/10/28/%E7%AC%AC%E4%B8%80%E5%A4%A9----%E5%AD%A6%E4%B9%A0%E5%85%B3%E4%BA%8E%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/Users\lrx\AppData\Roaming\Typora\typora-user-images\image-20251028172825043.png" alt="image-20251028172825043"></p>
+<p><img src="/../images/image-20251028172825043.png" alt="image-20251028172825043"></p>
 <p>注意现在访问 2339543119.github.io 会出现 404 的情况，应该进行如下修改：</p>
 <p>进入 settings</p>
-<p><img src="/2025/10/28/%E7%AC%AC%E4%B8%80%E5%A4%A9----%E5%AD%A6%E4%B9%A0%E5%85%B3%E4%BA%8E%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/Users\lrx\AppData\Roaming\Typora\typora-user-images\image-20251028173010606.png" alt="image-20251028173010606"></p>
+<p><img src="/../images/image-20251028173010606.png" alt="image-20251028173010606"></p>
 <p>找到 pages</p>
-<p><img src="/2025/10/28/%E7%AC%AC%E4%B8%80%E5%A4%A9----%E5%AD%A6%E4%B9%A0%E5%85%B3%E4%BA%8E%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/Users\lrx\AppData\Roaming\Typora\typora-user-images\image-20251028173042203.png" alt="image-20251028173042203"></p>
+<p><img src="/../images/image-20251028173042203.png" alt="image-20251028173042203"></p>
 <p>一般第一次创建都为 None, 应该改为 master 或者 main，你看你的项目是什么，我的是 master(与_config.yml 文件和 code 中分支保持一致)。</p>
-<p><img src="/2025/10/28/%E7%AC%AC%E4%B8%80%E5%A4%A9----%E5%AD%A6%E4%B9%A0%E5%85%B3%E4%BA%8E%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/Users\lrx\AppData\Roaming\Typora\typora-user-images\image-20251028173059898.png" alt="image-20251028173059898"></p>
+<p><img src="/../images/image-20251028173059898.png" alt="image-20251028173059898"></p>
 <h2 id="访问你的远端-blog"><a href="#访问你的远端-blog" class="headerlink" title="访问你的远端 blog"></a>访问你的远端 blog</h2><p>在地址栏输入你的链接，我的是 2339543119.github.io，进入以下页面：</p>
-<p><img src="/2025/10/28/%E7%AC%AC%E4%B8%80%E5%A4%A9----%E5%AD%A6%E4%B9%A0%E5%85%B3%E4%BA%8E%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/Users\lrx\AppData\Roaming\Typora\typora-user-images\image-20251028173419381.png" alt="image-20251028173419381"></p>
+<p><img src="/../images/image-20251028173419381.png" alt="image-20251028173419381"></p>
 <p>即为部署成功，快去试试吧。</p>
 <h2 id="更改你-blog-的主题"><a href="#更改你-blog-的主题" class="headerlink" title="更改你 blog 的主题"></a>更改你 blog 的主题</h2><p>进入 cmd，下载主题：</p>
 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia</span><br></pre></td></tr></table></figure>
 
 <p>找到 blog&#x2F;themes&#x2F;，把主题名称改为 yilia。</p>
-<p><img src="/2025/10/28/%E7%AC%AC%E4%B8%80%E5%A4%A9----%E5%AD%A6%E4%B9%A0%E5%85%B3%E4%BA%8E%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/Users\lrx\AppData\Roaming\Typora\typora-user-images\image-20251028175716596.png" alt="image-20251028175716596"></p>
+<p><img src="/../images/image-20251028175716596.png" alt="image-20251028175716596"></p>
 <p>之后再打开_config.yml 文件，修改 theme，保存：</p>
-<p><img src="/2025/10/28/%E7%AC%AC%E4%B8%80%E5%A4%A9----%E5%AD%A6%E4%B9%A0%E5%85%B3%E4%BA%8E%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/Users\lrx\AppData\Roaming\Typora\typora-user-images\image-20251028175750023.png" alt="image-20251028175750023"></p>
+<p><img src="/../images/image-20251028175750023.png" alt="image-20251028175750023"></p>
 <p>再来打开 cmd，在&#x2F;blog 目录下输入:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
 
